@@ -1,31 +1,24 @@
 Using the template
 ------------------
 
-This is the TU Delft dissertation template for LaTeX. It is designed to work
-with all versions of LaTeX, but if you want to adhere to the TU Delft house
-style, you need to use XeLaTeX, as it supports TrueType and OpenType fonts. The
-document can be compiled with
+This PhD thesis template was heavily based on the TU Delft dissertation template.
+You can download the original template at:
+https://intranet.tudelft.nl/services/communicatie/handleidingen/handleiding-huisstijl/downloads/
 
-  xelatex dissertation
+I used this template for my dissertation and will slowly write instructions on how to use. 
+The same guidelines for the TU Delft teplate are valid and kept here as reference.
+
+If you are interested in using the template, I will be happy to speed up the documentation.
+
+Enjoy,
+Victor
+
+To compile, run: 
+
+  pdflatex dissertation
   bibtex chapter-1/chapter-1
-  xelatex dissertation
-  xelatex dissertation
-
-Or by selecting the 'XeLaTeX' and 'BibTeX' options in your favorite TeX editing
-program, respectively. Note that you have to run bibtex for every chapter.
-
-A sample document, as well as documentation for template options, can be found
-in example.pdf. An example with the native LaTeX fonts, compiled using the
-'nativefonts' option (or with pdflatex), can be found in
-example-nativefonts.pdf. This example also has the print option turned on.
-
-A separate document is available for the propositions. It can be generated with
-
-  xelatex propositions
-
-or simply with the 'XeLaTeX' option in TeXworks or an equivalent program.
-
-
+  pdflatex dissertation
+  pdflatex dissertation
 
 Installation on Windows
 -----------------------
