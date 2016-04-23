@@ -1,0 +1,66 @@
+%% Use \documentclass[print]{dissertation} to export the document
+\documentclass[]{dissertation}
+
+
+\usepackage{booktabs}
+\usepackage{siunitx} % handle units with proper spacing
+\usepackage[final]{pdfpages} % add pdf pages
+\usepackage{gensymb} % \degree symbol
+\usepackage{afterpage} %page selection and control 
+\usepackage{adjustbox} % Limit table
+\usepackage{colortbl} % colors in tables.
+\usepackage{rotating} % table rotation
+\usepackage{microtype} % improves reading
+\usepackage{textcomp} %fix apostrophes
+\usepackage{textgreek}
+
+\raggedbottom % remove unwanted spaces between paragraphs
+%%%% List of common used terms
+
+\begin{document}
+
+%% Specify the title and author of the thesis. This information will be used on
+%% the title page (in title/title.tex) and in the metadata of the final PDF.
+\title[Optional Subtitle]{Title}
+\author{Albert}{Einstein}
+
+%% Use Roman numerals for the page numbers of the title pages and table of
+%% contents.
+\frontmatter
+
+\include{title/title}
+
+%% The (optional) dedication can be used to thank someone or display a
+%% significant quotation.
+\dedication{\epigraph{Science is a wonderful thing \\ if one does not have to earn one's living at it.}{Albert Einstein}}
+
+\tableofcontents
+
+\include{summary/summary}
+\include{preface/preface}
+
+%% Use Arabic numerals for the page numbers of the chapters.
+\mainmatter
+
+%% Turn on thumb indices.
+\thumbtrue
+
+\include{chapter-1/chapter-1}
+\include{chapter-2/chapter-2}
+\include{conclusion/conclusion}
+\include{epilogue/epilogue}
+\include{acks/acks}
+
+%% Use letters for the chapter numbers of the appendices.
+\appendix
+
+%\include{appendix-a/appendix-a}
+
+%% Turn off thumb indices for unnumbered chapters.
+\thumbfalse
+
+\include{cv/cv}
+\include{publications/publications}
+
+\end{document}
+
