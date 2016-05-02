@@ -34,6 +34,9 @@ on top of a basic MiKTeX installation to make full use of the template:
 Note that MiKTeX will generally automatically install these packages if they are
 missing from your installation.
 
+To install MikTex, just download it from here: http://miktex.org/download
+
+I like to use TexStudio - a Latex Editor: http://www.texstudio.org/
 
 
 Installation on Linux (Debian/Ubuntu)
