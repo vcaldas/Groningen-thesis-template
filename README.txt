@@ -50,3 +50,9 @@ template:
   texlive-lang-european, texlive-lang-portuguese,
   texlive-lang-english, texlive-latex-extra, texlive-xetex
 
+
+Live Example
+------------
+
+Find the resulting thesis here:
+https://research.rug.nl/en/publications/activation-and-regulation-of-e-coli-dna-polymerase-v-studied-at-t
